@@ -1,8 +1,10 @@
+require 'dotenv'
 require 'dashing'
 require 'sequel'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  Dotenv.load
 
   $DB = Sequel.connect(ENV["POSTGRES_URL"])
 
@@ -19,4 +21,3 @@ map Sinatra::Application.assets_prefix do
 end
 
 run Sinatra::Application
- 
