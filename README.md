@@ -1,1 +1,5 @@
-Check out http://shopify.github.com/dashing for more information.
+USE POSTGRES FOLLOWER DB:
+
+Run server via:
+
+POSTGRES_URL='POSTGRES_FOLLOWER_DB' dashing start -p 3000
