@@ -5,8 +5,8 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #222;
-$text-color: #fff;
+$background-color: #fff;
+$text-color: #222;
 
 $background-warning-color-1: #e82711;
 $background-warning-color-2: #9b2d23;
@@ -44,7 +44,7 @@ html {
 body {
   margin: 0;
   background-color: $background-color;
-  font-size: 20px;
+  font-size: 16px;
   color: $text-color;
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -254,4 +254,3 @@ h3 {
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
