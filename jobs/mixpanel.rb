@@ -5,7 +5,6 @@ require 'dotenv'
 require 'cgi'
 Dotenv.load
 
-
 # prepare query string
 # args = all query parameters going to be sent out with the request
 #        (e.g. api_key, unit, interval, expire, format, etc.) excluding sig.
@@ -16,7 +15,7 @@ def mixpanel_signature(args = [], api_secret = ENV["MIXPANEL_API_SECRET"])
   return sig
 end
 
-SCHEDULER.every '3s', :first_in => 0 do |job|
+SCHEDULER.every '10m', :first_in => 0 do |job|
 
   sig = mixpanel_signature(['IDE%20User%20Saved%20File', ])
   puts sig

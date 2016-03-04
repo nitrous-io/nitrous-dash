@@ -247,6 +247,33 @@ h3 {
   padding-top: 5px;
 }
 
+.menu {
+  width: 1230px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu .item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu .item a {
+  color: #777;
+  padding: 8px 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.menu .item a.active {
+  color: #000;
+}
+
+.menu .item a:hover {
+  color: #000;
+  background: #f8f8f8;
+}
+
 
 // ----------------------------------------------------------------------------
 // Clearfix
